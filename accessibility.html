@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessibility with our project</title>
+  <link rel="stylesheet" href="css/main.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=OpenSans' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+<header>
+  <a class="skip-content" href="#main">Skip to content</a>
+  <img src="img/header_typing.jpg" alt="Image of a man typing on a MacBook">
+</header>
+
+
+    <nav>
+        <ul class="navbar">
+            <li><a href=index.html>Welcome</a></li>
+    
+            <li><a href="reflection.html">Reflection</a></li>
+    
+            <li class="active"><a href="accessibility.html">Accessibility</a></li>
+    
+            <li><a href="topical.html">Topical</a></li>
+    
+            <li><a href="fun.html">Fun</a></li>
+        </ul>
+    </nav>
+    
+      <section class="flex-part part1">
+        <div class="container">
+        <div>
+      <h2>Web Accessibility</h2>
+          <p>To design and code websites in the way that people with disabilities can use them, 
+            is one of the main goals when making a website accessible.</p>
+          
+          <p>We had accessibility in mind from the start, and considered this when choosing 
+            the layout and color-scheme for our website.
+            We kept the layout clear, with easy navigation of the website. You can also easily navigate 
+            the website by using only the Tab and Enter keys, which is a very important aspect of web accessibility.</p>
+
+          <p>We included the main page regions to our website, such as header, navigation, main content and footer, so 
+            that it would be easier for web browsers to identify them.</p>
+
+          <p>We chose a readable font size (16px is recommended) and fonts that are easibly readable.</p>  
+
+          <p>Text alternatives were provided to all none text content (images).</p>    
+      </div>
+      <div>
+      <h2>Testing Our Code</h2>
+          <p>After checking our code at html and css code validators, we found a few mistakes regarding not closed tags. 
+            It was an easy task to fix and after that our code looked even more tidy. </p>  
+
+          <p>Web Accessibility Checker showed a mistake regarding social media buttons. To fix it, we had to give a description
+            of what the buttons were about, by adding the class in h. Also, we were missing skip to content tool, 
+            that makes it easier for those that might relay only on keybord using to navigate the site. To make it work, we had to 
+            make some changes in html and css code. Moreover, we got a few possible mistakes regarding images and their descriptions.</p>  
+
+          <p>To make website more accessible, we checked our website color choices at 
+          Color Contrast Accessibility Validator. Since the ratio was high enough, we went with light color-scheme with high contrasts.</p>
+
+    </div>
+    </div>
+      </section>
+ 
+<footer>
+  <ul>    
+    <li>Author: "Unknown"
+    <li><a href="mailto:unknown@oslomet.com">unknown@oslomet.com</a></li>
+    <li><a href="https://www.facebook.com" target="_blank" class="fa fa-facebook"><span class="icon">Facebook</span></a> <!-- Social media buttons code courtesy of https://www.w3schools.com/howto/howto_css_social_media_buttons.asp -->
+    <a href="https://www.instagram.com" target="_blank" class="fa fa-instagram"><span class="icon">Instagram</span></a></li>
+  </ul>
+        
+</footer>
+
+</body>
+
+</html>

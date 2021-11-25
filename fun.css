@@ -1,0 +1,147 @@
+
+/* Courtesy of w3 schools (https://www.w3schools.com)
+ for teaching us how to use the @keyframes, transform, opacity, animation and button property.*/
+ 
+ /* "Exam 2021-Web" logo created with https://www.freelogodesign.org/ */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body {
+	background: linear-gradient(-50deg, #f1673d, #bd235e, #0679a3, #11856a);
+	background-size: 300% 300%;
+	animation: gradient 10s ease infinite;
+	height: 100vh;
+    overflow: hidden;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.bird{
+    width: 85%;
+    height: 15%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button{
+    color: white;
+    padding: 0.625rem 1.5625rem;
+    background: transparent;
+    border: 0.1875rem solid #fff;
+    border-radius: 1.25rem;
+    
+    cursor: pointer;
+}
+
+.content{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    z-index: 2; 
+}
+
+h1{
+    font-size: clamp(1rem, -0.8em + 8vw, 4.5rem);
+    margin: 0.625rem 0 1.875rem;
+
+    color: white;
+    padding: 0.625rem 1.5625rem;
+    background: transparent;
+    border: 0.3125rem solid rgb(255, 254, 254);
+    border-radius: 0.9375rem;
+}
+
+.side-bar{
+    width: 3.125rem;
+    height: 100vh;
+    background: linear-gradient(#00545d, #000729);
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+
+.social-links img{
+    width: 2.8125rem;
+    margin: 0.625rem auto;
+    cursor: pointer;
+}
+
+.social-links {
+    width: 3.125rem;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.bubbles img{
+    width: 3.125rem;
+    animation: bubble 7s linear infinite;
+}
+
+.bubbles{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -4.375rem;
+}
+
+@keyframes bubble{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+
+        opacity: 1;
+    }
+
+    100%{
+        transform: translateY(-70vh);
+        opacity: 0;
+    }
+}
+
+
+.bubbles img:nth-child(1) {
+    animation-delay: 1s;
+}
+
+.bubbles img:nth-child(2) {
+    animation-delay: 0s;
+}
+
+.bubbles img:nth-child(3) {
+    animation-delay: 4s;
+}
+.bubbles img:nth-child(4) {
+    animation-delay: 3s;
+}
+.bubbles img:nth-child(5) {
+    animation-delay: 1s;
+}
+.bubbles img:nth-child(6) {
+    animation-delay: 2s;
+}
